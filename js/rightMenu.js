@@ -173,9 +173,8 @@ $('#menu-backward').on('click', function () { window.history.back(); });
 $('#menu-forward').on('click', function () { window.history.forward(); });
 $('#menu-refresh').on('click', function () { window.location.reload(); });
 $('#menu-darkmode').on('click', function () { 
-    // switchDarkMode()
     removeRightMenu();
-    switchNightMode();
+    switchDarkMode();
 });
 $('#menu-home').on('click', function () { window.location.href = window.location.origin; });
 /* 简体繁体切换 */
@@ -195,6 +194,7 @@ $("#menu-copy").on("click", function () {
     removeRightMenu();
     document.execCommand('Copy',false,null);
     //这里可以写点东西提示一下 已复制
+    btf.snackbarShow('已复制');
 });
 $("#rightmenu-mask").on("click", function () { removeRightMenu() });
 $("#rightmenu-mask").contextmenu(function () {

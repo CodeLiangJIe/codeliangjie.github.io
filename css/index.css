@@ -4956,9 +4956,6 @@ h1.page-title + .tag-cloud-list {
   background: -ms-linear-gradient(#fefefe, #fffbe8);
   background: linear-gradient(#fefefe, #fffbe8);
 }
-.search span {
-  display: none;
-}
 .menus_item a {
   text-decoration: none !important;
 }

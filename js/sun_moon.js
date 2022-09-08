@@ -18,7 +18,7 @@ function switchNightMode() {
       document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun')
     } else {
       activateLightMode()
-      saveToLocal.set('theme', 'light', 2)
+      saveToLocal.set('theme', 'light', 1)
       document.querySelector('body').classList.add('DarkMode'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon')
     }
     // handle some cases
