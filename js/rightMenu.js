@@ -17,6 +17,12 @@ rm.reloadrmSize = function () {
     rmHeight = $("#rightMenu").height()
 };
 window.oncontextmenu = function (event) {
+    $('.rightMenu-group.hide').hide();
+    //如果有文字选中，则显示 文字选中相关的菜单项
+    if(document.getSelection().toString()){
+        $('#menu-text').show();
+    }
+
     if (document.body.clientWidth > 768) {
         let pageX = event.clientX + 10;
         let pageY = event.clientY;
@@ -201,3 +207,4 @@ $("#rightmenu-mask").contextmenu(function () {
     removeRightMenu();
     return false;
 });
+
